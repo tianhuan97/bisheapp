@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo_01/demo_01.iml" filepath="$PROJECT_DIR$/demo_01/demo_01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo_02/demo_02.iml" filepath="$PROJECT_DIR$/demo_02/demo_02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo_03/demo_03.iml" filepath="$PROJECT_DIR$/demo_03/demo_03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo_04/demo_04.iml" filepath="$PROJECT_DIR$/demo_04/demo_04.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo_05/demo_05.iml" filepath="$PROJECT_DIR$/demo_05/demo_05.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo_06/demo_06.iml" filepath="$PROJECT_DIR$/demo_06/demo_06.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo_07/demo_07.iml" filepath="$PROJECT_DIR$/demo_07/demo_07.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo_08/demo_08.iml" filepath="$PROJECT_DIR$/demo_08/demo_08.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo_09/demo_09.iml" filepath="$PROJECT_DIR$/demo_09/demo_09.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo_10/demo_10.iml" filepath="$PROJECT_DIR$/demo_10/demo_10.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tf_39.iml" filepath="$PROJECT_DIR$/tf_39.iml" />
+    </modules>
+  </component>
+</project>
