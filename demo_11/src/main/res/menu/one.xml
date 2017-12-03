@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/who"
+        android:title="要显示的联系人"></item>
+    <item
+        android:id="@+id/inout"
+        android:title="导入导出"></item>
+
+    <item
+        android:id="@+id/zhanghu"
+        android:title="账户"></item>
+
+</menu>

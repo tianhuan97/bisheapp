@@ -67,5 +67,6 @@ public class MainActivity extends AppCompatActivity {
             textView.setText(list().get(position).get("name").toString());
             return view;
         }
+
     }
 }
