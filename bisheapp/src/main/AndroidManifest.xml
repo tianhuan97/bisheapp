@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.bisheapp">
+    <service android:name="com.baidu.location.f" android:enabled="true" android:process=":remote"> </service>
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <meta-data
+        android:name = "com.baidu.lbsapi.API_KEY"
+        android:value = "IMMpKSylZjnDbxFEEM9sjCKhm23R60er">
+    </meta-data>
 
     <application
         android:allowBackup="true"
@@ -8,17 +26,28 @@
         android:label="社区养老服务"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity" />
+        <activity android:name=".volunteer.VolunteerLogin" />
+        <activity android:name=".volunteer.VolunteerRegister" />
+        <activity android:name=".user.UserLogin" />
+        <activity android:name=".user.UserRegister" />
+        <activity android:name=".user.User" />
+        <activity android:name=".volunteer.Volunteer" />
+        <activity android:name=".welcome">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".VolunteerLogin" />
-        <activity android:name=".VolunteerRegister" />
-        <activity android:name=".UserLogin" />
-        <activity android:name=".UserRegister"></activity>
+        <activity android:name=".volunteer.volunteerList" />
+        <activity android:name=".user.UserList" />
+        <activity android:name=".user.userSetting" />
+        <activity android:name=".volunteer.vlist" />
+        <activity android:name=".user.UserMessage" />
+        <activity android:name=".elderHouse" />
+        <activity android:name=".volunteer.vtMessage" />
+        <activity android:name=".volunteer.vtSetting"></activity>
     </application>
 
 </manifest>
