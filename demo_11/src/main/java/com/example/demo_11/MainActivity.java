@@ -13,6 +13,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.ImageView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -32,13 +33,26 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        xinxi = (ListView) findViewById(R.id.xinxi);
+        xinxi = (ListView) findViewById(R.id.xinxi);/*
         getPhoneNumberFromMobile = new GetPhoneNumberFromMobile();
-        list = getPhoneNumberFromMobile.getPhoneNumberFromMobile(this);
+        list = getPhoneNumberFromMobile.getPhoneNumberFromMobile(this);*/
+        String name1 = "志愿者：张三";
+        String number1 = "12345678901";
+        PhoneInfo phoneInfo1 = new PhoneInfo(name1,number1);
+        String name2 = "志愿者：李四";
+        String number2 = "13812345678";
+        PhoneInfo phoneInfo2 = new PhoneInfo(name2,number2);
+        String name3 = "志愿者：王五";
+        String number3 = "15512345678";
+        PhoneInfo phoneInfo3 = new PhoneInfo(name3,number3);
+        list.add(phoneInfo1);
+        list.add(phoneInfo2);
+        list.add(phoneInfo3);
+
 
         xinxi.setAdapter(new MyAdapter(list,MainActivity.this));
 
-        xinxi.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        /*xinxi.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 String number = list.get(position).getNumber();
@@ -48,16 +62,43 @@ public class MainActivity extends AppCompatActivity {
                 }
                 startActivity(intent);
             }
+        });*/
+
+        /*xinxi.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+            @Override
+            public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
+                String number = list.get(position).getNumber();
+                Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:"+number));
+                if (ActivityCompat.checkSelfPermission(MainActivity.this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
+                    return true;
+                }
+                startActivity(intent);
+                return false;
+            }
+        });
+*/
+        xinxi.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                String name = list.get(position).getName();
+                String number = list.get(position).getNumber();
+                Intent intent = new Intent(MainActivity.this,detailedInfomation.class);
+                Bundle bundle = new Bundle();
+                bundle.putString("name",name);
+                bundle.putString("number",number);
+                intent.putExtras(bundle);
+                startActivity(intent);
+            }
         });
 
         registerForContextMenu(xinxi);
     }
 
-    /*@Override
+    @Override
     public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
         MenuInflater menuInflater = getMenuInflater();
         menuInflater.inflate(R.menu.two,menu);
-    }*/
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -71,7 +112,9 @@ public class MainActivity extends AppCompatActivity {
         int i = item.getItemId();
         switch (i){
             case R.id.call:
+                Stri
 
         }
+        return false;
     }*/
 }

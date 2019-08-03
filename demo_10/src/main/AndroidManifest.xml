@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.demo_10">
+    
+    <uses-permission android:name="th.READDEMO10"
+        android:label="request demo_10 data"
+        android:protectionLevel="normal" />
 
     <application
         android:allowBackup="true"
@@ -14,7 +18,9 @@
 
         <provider
             android:name=".MyContentProvider"
-            android:authorities="com.example.demo_10.MyContentProvider" />
+            android:authorities="com.example.demo_10.MyContentProvider"
+            android:exported="true"
+            android:permission="th.READDEMO10"/>
 
         <activity android:name=".Main2Activity">
             <intent-filter>

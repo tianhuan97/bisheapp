@@ -23,16 +23,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="name"
-            android:id="@+id/name"
+            android:id="@+id/u1"
             android:layout_gravity="center"
-            android:layout_above="@+id/number"
-            android:layout_alignLeft="@+id/number"
-            android:layout_alignStart="@+id/number" />
+            android:layout_above="@+id/u2"
+            android:layout_alignLeft="@+id/u2"
+            android:layout_alignStart="@+id/u2" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="number"
-            android:id="@+id/number"
+            android:text="age"
+            android:id="@+id/u2"
             android:layout_gravity="center"
             android:layout_marginLeft="40dp"
             android:layout_marginStart="40dp"

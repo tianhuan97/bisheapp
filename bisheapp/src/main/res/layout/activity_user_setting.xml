@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bisheapp.user.userSetting">
+
+    <!--<ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">-->
+
+    <!--<EditText
+        android:id="@+id/usid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="71dp" />
+
+    <EditText
+        android:id="@+id/usname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/usid"
+        android:layout_marginTop="31dp" />
+
+    <EditText
+        android:id="@+id/uspassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/usid"
+        android:layout_marginTop="31dp" />
+
+    <EditText
+        android:id="@+id/ussex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/uspassword"
+        android:layout_marginTop="31dp" />
+
+    <EditText
+        android:id="@+id/usage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/ussex"
+        android:layout_marginTop="31dp" />
+
+    <EditText
+        android:id="@+id/usaddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/ussex"
+        android:layout_marginTop="31dp" />
+
+
+    <EditText
+        android:id="@+id/usjName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/usaddress"
+        android:layout_marginTop="31dp" />
+
+    <EditText
+        android:id="@+id/usjNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/usjName"
+        android:layout_marginTop="31dp" />-->
+    <!--</ScrollView>-->
+
+    <!--<Button
+        android:id="@+id/ussure"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/usjName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="31dp"
+        android:text="确认修改" />-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/usid"
+                android:layout_width="367dp"
+                android:layout_height="80dp" />
+
+            <EditText
+                android:id="@+id/usname"
+                android:layout_width="367dp"
+                android:layout_height="80dp" />
+
+            <EditText
+                android:id="@+id/uspassword"
+                android:layout_width="367dp"
+                android:layout_height="80dp" />
+
+            <EditText
+                android:id="@+id/ussex"
+                android:layout_width="367dp"
+                android:layout_height="80dp" />
+
+            <EditText
+                android:id="@+id/usage"
+                android:layout_width="367dp"
+                android:layout_height="80dp" />
+
+            <EditText
+                android:id="@+id/usaddress"
+                android:layout_width="367dp"
+                android:layout_height="80dp" />
+
+            <EditText
+                android:id="@+id/usjName"
+                android:layout_width="367dp"
+                android:layout_height="80dp" />
+
+            <EditText
+                android:id="@+id/usjNumber"
+                android:layout_width="367dp"
+                android:layout_height="80dp"
+                android:layout_gravity="left" />
+
+            <Button
+                android:id="@+id/usButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="确认修改"/>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

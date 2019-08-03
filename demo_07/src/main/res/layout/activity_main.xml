@@ -183,6 +183,15 @@
                             android:id="@+id/jinkou"
                             android:layout_gravity="center"/>
 
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/imageView4"
+                            android:src="@drawable/kouhong"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true" />
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -195,6 +204,33 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1">
+
+                        <RelativeLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/bimai1"
+                                android:id="@+id/imageView"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="有好货"
+                                android:textColor="#6bd0e2"
+                                android:id="@+id/textView2"
+                                android:layout_alignBottom="@+id/imageView"
+                                android:layout_centerHorizontal="true" />
+
+
+                        </RelativeLayout>
 
                         <ImageView
                             android:layout_width="40dp"
@@ -498,51 +534,6 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1">
 
-                        <RelativeLayout
-                            android:orientation="vertical"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1">
-
-                            <ImageView
-                                android:layout_width="20dp"
-                                android:layout_height="20dp"
-                                android:src="@drawable/bimai1"
-                                android:id="@+id/imageView"
-                                android:layout_alignParentTop="true"
-                                android:layout_alignParentLeft="true"
-                                android:layout_alignParentStart="true" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="有好货"
-                                android:textColor="#6bd0e2"
-                                android:id="@+id/textView2"
-                                android:layout_alignBottom="@+id/imageView"
-                                android:layout_centerHorizontal="true" />
-
-                            <ImageView
-                                android:layout_width="80dp"
-                                android:layout_height="30dp"
-                                android:id="@+id/imageView3"
-                                android:src="@drawable/gaoyanzhi"
-                                android:layout_below="@+id/imageView"
-                                android:layout_alignRight="@+id/textView2"
-                                android:layout_alignEnd="@+id/textView2" />
-
-
-                            <ImageView
-                                android:layout_width="wrap_content"
-                                android:layout_height="50dp"
-                                android:id="@+id/imageView4"
-                                android:src="@drawable/kouhong"
-                                android:layout_alignParentBottom="true"
-                                android:layout_alignParentLeft="true"
-                                android:layout_alignParentStart="true" />
-
-                        </RelativeLayout>
-
                         <LinearLayout
                             android:orientation="horizontal"
                             android:layout_width="match_parent"
@@ -555,6 +546,15 @@
                                 android:layout_height="80dp"
                                 android:src="@drawable/youhaohuofendi"
                                 android:id="@+id/imageView5" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/imageView3"
+                                android:src="@drawable/gaoyanzhi"
+                                android:layout_below="@+id/imageView"
+                                android:layout_alignRight="@+id/textView2"
+                                android:layout_alignEnd="@+id/textView2" />
                         </LinearLayout>
                     </LinearLayout>
 
